@@ -7,8 +7,8 @@
 //
 
 import XCTest
-@testable import Silly_Song
 
+@testable import Silly_Song
 class Silly_SongTests: XCTestCase {
     
     override func setUp() {
