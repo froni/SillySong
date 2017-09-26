@@ -67,9 +67,12 @@ func shortNameFromName(name: String)-> String {
             newNameArray = shortNameArray
         } else {
             shortNameArray.remove(at: 0)
+            if shortNameArray.startIndex == shortNameArray.endIndex{
+                newNameArray = Array(name.lowercased().characters).map { String($0) }
+            }
         }
     }
-    print(newNameArray)
+    //print(newNameArray)
     
     
     return newNameArray.joined()
